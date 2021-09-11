@@ -10,6 +10,16 @@ body {
   font-size: 30px;
 }
 
+#logo a {
+	color: black;
+	text-decoration-line: none;
+}
+
+#logo a:active {
+	color: white;
+	background-color: #75c1ff;
+	}
+
 #about {
 	margin: 20px 10px;
 	padding: 10px 0px;
