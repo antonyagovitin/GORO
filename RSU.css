@@ -10,6 +10,12 @@ body {
   font-size: 30px;
 }
 
+#text {
+	font-size: 60%;
+	color: gray;
+	padding-right: 3%;
+}
+
 #logo a {
 	color: black;
 	text-decoration-line: none;
