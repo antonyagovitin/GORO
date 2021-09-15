@@ -38,6 +38,21 @@ Vivamus eu ligula id eros ultrices facilisis. Ut ultrices volutpat purus, nec lo
 
 Cras euismod laoreet elit, vitae rutrum ipsum feugiat sit amet. Mauris lorem erat, tristique quis purus eget, vehicula faucibus enim. Suspendisse purus ligula, vehicula sit amet cursus a, sagittis ut libero. Proin ultricies ex at diam fringilla blandit. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi dui urna, mattis non risus ultrices, volutpat molestie augue. Curabitur posuere sit amet nulla et sollicitudin. Suspendisse vitae hendrerit elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eleifend vel tellus in pellentesque. Nam erat ante, eleifend eu erat ac, sagittis posuere urna. Donec aliquet erat eu massa dapibus consectetur nec eget purus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Vivamus sem lacus, luctus et euismod id, posuere ut urna. Pellentesque ullamcorper ornare semper. Mauris nunc diam, iaculis eu lorem a, malesuada aliquet dolor.
 	</div>
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+		<script>
+			function slowScroll(id) {
+				$('html,body').animate({
+					scrollTop: $(id).offset().top
+				}, 500);
+			}
+
+			$(document).on("scroll", function() {
+				if($(window).scrollTop() === 0)
+					$("header").removeClass("fixed");
+				else
+					$("header").attr("class","fixed");
+			});
+		</script>
 	
 </body>
 </html>
